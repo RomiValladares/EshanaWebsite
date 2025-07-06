@@ -1,0 +1,464 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Clemo – Free HTML5 Multipurpose Portfolio Page Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+        <link rel="stylesheet" href="assets/css/fonticons.css">
+        <link rel="stylesheet" href="assets/css/slider-pro.css">
+        <link rel="stylesheet" href="assets/css/stylesheet.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <style>
+            /* Custom styles for smooth scrolling and section spacing */
+            html {
+                scroll-behavior: smooth;
+            }
+            section {
+                padding-top: 80px; /* Adjust as needed for fixed header */
+                padding-bottom: 80px;
+            }
+            .navbar-nav li a {
+                cursor: pointer; /* Indicate clickable links */
+            }
+            /* Ensure images in the consolidated sections are responsive */
+            .main_about_area img, .main_service_area img, .main_blog_area img, .single_mixi_portfolio img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+            /* Adjust masonry layout for responsive behavior if mixcontent is used */
+            #mixcontent .col-sm-4 {
+                width: 100%; /* Default for mobile */
+            }
+            @media (min-width: 768px) {
+                #mixcontent .col-sm-4 {
+                    width: 33.333333%; /* For larger screens */
+                }
+            }
+
+            /* --- Styles for shrinking header (from previous working version) --- */
+            .navbar-fixed-top {
+                transition: padding .3s ease-in-out; /* Smooth transition for padding */
+                /* padding: 20px 0; */
+            }
+            .navbar-fixed-top.navbar-shrink {
+                /* Smaller padding when shrunk */
+                /* padding: 10px 0;  */
+                background-color: rgba(255, 255, 255, 0.95); /* Slightly opaque background */
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            }
+            .navbar-fixed-top.navbar-shrink .navbar-brand img {
+                max-height: 40px; /* Adjust logo size */
+                transition: max-height .3s ease-in-out;
+            }
+            .navbar-fixed-top .navbar-brand img {
+                max-height: 60px; /* Original logo size */
+                transition: max-height .3s ease-in-out;
+            }
+            /* --- End of Styles for shrinking header --- */
+        .full-image-hero {
+            background: url('assets/images/main_bg_img3.jpg') no-repeat center center / cover;
+            height: 80vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: flex-end;
+      padding-bottom: 10%; /* Adds space at the bottom */
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .full-image-hero .hero-text {
+            z-index: 2;
+        }
+
+        .full-image-hero .hero-text h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .full-image-hero .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .full-image-hero .home_btn {
+            margin-top: 20px;
+        }
+
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar-collapse">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class='preloader'><div class='loaded'>&nbsp;</div></div>
+        <header id="main_menu" class="header navbar-fixed-top">            
+            <div class="main_menu_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="nave_menu">
+                            <nav class="navbar navbar-default" id="navmenu">
+                                <div class="container-fluid">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="index.html">
+                                            <img src="assets/images/logo.png"/>
+                                        </a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li><a class="smooth-scroll" href="#home">home</a></li>
+                                            <li><a class="smooth-scroll" href="#about">about</a></li>
+                                            <li><a class="smooth-scroll" href="#services">services</a></li>
+                                            <li><a class="smooth-scroll" href="#contact">contact</a></li>
+                                        </ul>    
+                                    </div>
+
+                                </div>
+                            </nav>
+                        </div>	
+                    </div>
+
+                </div>
+
+            </div>
+        </header> <!--End of header -->
+
+
+
+
+        <!-- Home Section -->
+        <section id="home" class="home full-image-hero" style="margin-top: 120px;">
+        <div class="hero-text">
+            <h2>Eshana Bodywork</h2>
+            <div class="separator"></div>
+            <p class="subtitle">Come Home to Your Body.  <br />Reconnect with Your Breath.<br /> Rediscover Your Balance.</p>
+        </div>
+        </section>
+        <!-- End of Home Section -->
+
+                <!-- About Section -->
+        <section id="about" class="about sections">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="head_title text-center">
+                            <h1>about Eshana</h1>
+                        </div><!-- End of head title -->
+
+                        <div class="main_about_area"> 
+                            <div class="row">
+
+                                <div class="col-sm-6">
+                                    <div class="signle_about_left">
+                                        <img src="assets/images/eshanaprofile.jpg" alt="" />
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-5 col-sm-push-1">
+                                    <div class="single_about">
+                                        <div class="separator2"></div>
+                                        <p>My name is Eshana, and massage has been part of my life for over 30 years. I began exploring the healing arts in 1989/90, following a deep curiosity about the body, energy, and the ways we hold and release experience. Over the years, I’ve studied a wide range of techniques with teachers from around the world, each one offering a new window into the art of healing through touch. </p>
+
+                                        <p>In 2003/4, I chose to formalize my training and became licensed in Santa Fe, New Mexico — a place that deeply shaped my connection to the spiritual and grounding aspects of bodywork. Since 2004, I’ve been honored to hold space for healing in the Hamptons, where I’ve built a practice rooted in presence, intuition, and trust.</p>
+
+                                        <p>At Eshana Massage Therapy, I offer Deep Tissue, Swedish, Pregnancy, Therapeutic, and Intuitive massage. My approach blends technical skill with intuitive listening, creating sessions that are fully personalized and guided by your body’s unique needs in the moment.</p>
+
+                                        <p>The name Eshana is not only my own — it also comes from Sanskrit, meaning desire, intention, or spiritual search. To me, it reflects the deeper purpose of this work: to support your return to balance, to stillness, and to the wholeness that’s always within you.</p>
+
+                                        <a href="" class="btn btn-default">get in touch</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div><!-- End of col-sm-12 -->
+                </div><!-- End of row -->
+            </div><!-- End of Container -->
+            <hr />
+        </section><!-- End of about Section -->
+
+
+        <!-- Work Section -->
+        <section id="services" class="services sections">
+               <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="head_title text-center">
+                            <h1>services</h1>
+                        </div><!-- End of head title -->
+
+
+                        <ul class="list-inline text-center margin-bottom-60">
+                                <li class="filter" data-filter="all">Deep Tissue</li>
+                                <li class="filter creativemenu" data-filter=".category-1">Swedish</li>
+                                <li class="filter" data-filter=".category-2">Pregnancy</li>
+                                <li class="filter" data-filter=".category-3">Therapeutic</li>
+                                <li class="filter" data-filter=".category-4">Intuitive</li>
+                            </ul>
+                        <div class="main_service_area"> 
+                            <div class="single_service_area">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="signle_service_left">
+                                            <img src="assets/images/deeptissue.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-sm-push-1">
+                                        <div class="single_service">
+                                            <h2>Deep Tissue</h2>
+                                            <h3>Massage</h3>
+                                            <div class="separator2"></div>
+                                            <p>A grounding, restorative treatment that works into the deeper layers of muscle and fascia.</p>
+
+                                            <p>Ideal for chronic tension, pain relief, or those who crave a stronger touch. This massage encourages release on both a physical and energetic level, creating space for deep healing and renewed vitality.</p>
+
+                                            <a href="" class="btn btn-default">get in touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End of single service area -->
+
+                            <div class="single_service_area  margin-top-80">
+                                <div class="row">
+
+                                    <div class="col-sm-6 col-sm-push-6">
+                                        <div class="signle_service_left">
+                                            <img src="assets/images/swedishmassage.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5 col-sm-pull-6">
+                                        <div class="single_service">
+                                            <h2>Swedish</h2>
+                                            <h3>Massage</h3>
+                                            <div class="separator2"></div>
+                                            <p>A gentle, flowing massage designed to calm the nervous system and ease everyday stress.</p>
+
+                                            <p>With long, soothing strokes and a rhythmic pace, Swedish massage invites your body into a state of deep relaxation — a perfect choice when you simply need to rest, soften, and restore.</p>
+
+                                            <a href="" class="btn btn-default">get in touch</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- End of single service area -->
+
+                            <div class="single_service_area margin-top-80">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="signle_service_left">
+                                            <img src="assets/images/pregnancymassage.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-sm-push-1">
+                                        <div class="single_service">
+                                            <h2>Pregnancy</h2>
+                                            <h3>Massage</h3>
+                                            <div class="separator2"></div>
+                                            <p>A nurturing and supportive experience for the expecting mother.</p>
+
+                                            <p>This massage is tailored to meet the changing needs of your body, helping to relieve common discomforts, improve circulation, and offer a moment of connection between you and your baby. Safe, gentle, and deeply soothing.</p>
+
+                                            <a href="" class="btn btn-default">get in touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End of single service area -->
+
+                            <div class="single_service_area  margin-top-80">
+                                <div class="row">
+
+                                    <div class="col-sm-6 col-sm-push-6">
+                                        <div class="signle_service_left">
+                                            <img src="assets/images/therapeuticmassage.png" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5 col-sm-pull-6">
+                                        <div class="single_service">
+                                            <h2>Therapeutic</h2>
+                                            <h3>Massage</h3>
+                                            <div class="separator2"></div>
+                                            <p>Rooted in skill and sensitivity, this massage addresses areas of imbalance or discomfort with intention and care.</p>
+
+                                            <p>Whether you’re dealing with pain, restricted movement, or stress, therapeutic massage supports your body’s natural healing response with focused, restorative touch.</p>
+
+                                            <a href="" class="btn btn-default">get in touch</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div><!-- End of single service area -->
+
+                            <div class="single_service_area margin-top-80">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="signle_service_left">
+                                            <img src="assets/images/intuitivemassage.png" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-sm-push-1">
+                                        <div class="single_service">
+                                            <h2>Intuitive</h2>
+                                            <h3>Massage</h3>
+                                            <div class="separator2"></div>
+                                            <p>This is where the art of healing meets the wisdom of intuition. Each session is unique, drawing from various modalities as guided by your body’s needs in the moment.</p>
+
+                                            <p>Intuitive massage honors the energetic, emotional, and physical aspects of your being — helping you realign, release, and return to wholeness.</p>
+
+                                            <a href="" class="btn btn-default">get in touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End of single service area -->
+                        </div>
+                    </div><!-- End of col-sm-12 -->
+                </div><!-- End of row -->
+            </div><!-- End of Container -->
+        </section><!-- End of portfolio Section -->        
+
+        <!-- Contact Section -->
+    <section id="contact" class="contact">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="main_contact sections">
+                            <div class="head_title text-center whitetext">
+                                <h1>get in touch</h1>
+                            </div>
+
+                            <div class="row">
+                                <div class="contact_contant">
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="single_message_right_info">
+                                            <ul class="whitetext">
+                                                <li><i class="fa fa-map-marker"></i> <span>23 Mulholland Drive, Suite 721. Los Angeles 10010
+                                                        100 S. Main Street. Los Angeles 90012</span></li>
+
+                                                <li><i class="fa fa-mobile-phone"></i> <span>+1-670-567-5590</span></li>
+
+                                                <li><i class="fa fa-envelope-o"></i> <span>hello@eshana.com</span></li>
+                                            </ul>
+
+                                            <div class="contact_socail transition margin-top-80">
+                                                <a href=""><i class="fa fa-facebook img-circle"></i></a>
+                                                <a href=""><i class="fa fa-twitter img-circle"></i></a>
+                                                <a href=""><i class="fa fa-google-plus img-circle"></i></a>
+                                                <a href=""><i class="fa fa-pinterest img-circle"></i></a>
+                                                <a href=""><i class="fa fa-instagram img-circle"></i></a>
+                                            </div>
+                                        </div>
+                                    </div><!-- End of col-sm-6 -->
+
+                                    <div class="col-sm-6 col-xs-12">
+                                        <div class="single_contant_left margin-top-60">
+                                            <form action="#" id="formid">
+                                                <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
+
+                                                <div class="form-group">
+                                                    <label>name</label>
+                                                    <input type="text" class="form-control" name="name" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>e-mail</label>
+                                                    <input type="email" class="form-control" name="email" required="">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>your message</label>
+                                                    <textarea class="form-control" name="message" rows="8"></textarea>
+                                                </div>
+
+                                                <div class="">
+                                                    <input type="submit" value="submit" class="btn btn-default">
+                                                </div>
+                                                <!--</div>--> 
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div> <!-- End of messsage contant-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End of row -->
+            </div><!-- End of container -->
+        </section><!-- End of contact Section -->
+
+
+
+        <!-- START SCROLL TO TOP  -->
+
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/masonry/masonry.min.js"></script>
+        <script type="text/javascript">
+            $('.mixcontent').masonry();
+        </script>
+
+        <script src="assets/js/jquery.sliderPro.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function ($) {
+                $('#example3').sliderPro({
+                    width: 960,
+                    height: 200,
+                    fade: true,
+                    arrows: false,
+                    buttons: true,
+                    fullScreen: false,
+                    shuffle: true,
+                    smallSize: 500,
+                    mediumSize: 1000,
+                    largeSize: 3000,
+                    thumbnailArrows: true,
+                    autoplay: false,
+                    thumbnailsContainerSize: 960
+
+                });
+            });
+        </script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
