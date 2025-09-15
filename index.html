@@ -11,7 +11,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "MassageTherapist",
+              "@id": "https://eshanabodywork.com/#business",
+              "name": "Eshana Bodywork",
+              "url": "https://eshanabodywork.com/",
+              "image": "https://eshanabodywork.com/assets/images/logo.png",
+              "telephone": "+1-505-699-4477",
+              "priceRange": "$$",
+              "description": "Licensed massage therapist serving the Hamptons with deep tissue, Swedish, prenatal, and therapeutic bodywork.",
+              
+              "areaServed": [
+                { "@type": "AdministrativeArea", "name": "Sag Harbor, NY" },
+                { "@type": "AdministrativeArea", "name": "East Hampton, NY" },
+                { "@type": "AdministrativeArea", "name": "Southampton, NY" },
+                { "@type": "AdministrativeArea", "name": "Bridgehampton, NY" },
+                { "@type": "AdministrativeArea", "name": "Montauk, NY" },
+                { "@type": "AdministrativeArea", "name": "Shelter Island, NY" }
+              ],
+              
+              "serviceArea": {
+                "@type": "AdministrativeArea",
+                "name": "The Hamptons, New York"
+              },
+            
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sag Harbor",
+                "addressRegion": "NY",
+                "postalCode": "11963",
+                "addressCountry": "US"
+                /* For service-area businesses that don't accept walk-ins, omit streetAddress */
+              },
+            
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                  "opens": "08:00",
+                  "closes": "20:00"
+                }
+                /* Add weekend or custom hours as needed */
+              ]
+            }
+            </script>
 
+        
         <link rel="stylesheet" href="assets/css/fonticons.css">
         <link rel="stylesheet" href="assets/css/slider-pro.css">
         <link rel="stylesheet" href="assets/css/stylesheet.css">
